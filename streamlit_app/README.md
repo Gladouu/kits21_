@@ -1,2 +1,3 @@
-# App_KidneySpyRZ
- application streamlit du projet KidneySpy-rz
+# App Kidneyppyng
+ 
+ Application Streamlit du projet Kidneyppyng
