@@ -15,9 +15,6 @@ import config
 # TODO : you can (and should) rename and add tabs in the ./tabs folder, and import them here.
 from tabs import demo_1_about, demo_2_dataset, demo_3_preprocessng, demo_4_modelisation, demo_5_applicatif
 
-# pour model 2D
-import functions.fonctions_images as f_i
-import functions.fonctions_vie as f_v
 
 st.set_page_config(
     page_title=config.TITLE,
@@ -40,7 +37,7 @@ TABS = OrderedDict(
         (demo_3_preprocessng.sidebar_name, demo_3_preprocessng),
         (demo_4_modelisation.sidebar_name, demo_4_modelisation),
         (demo_5_applicatif.sidebar_name, demo_5_applicatif),
-        
+
     ]
 )
 
@@ -57,9 +54,8 @@ def run():
     st.sidebar.markdown("### Team members:")
     for member in config.TEAM_MEMBERS:
         st.sidebar.markdown(member.sidebar_markdown(), unsafe_allow_html=True)
-    st.sidebar.markdown("Chef de Projet : Thomas BOEHLER", unsafe_allow_html=True)
-    st.sidebar.markdown("Chef de Cohorte : Raphaël KASSEL", unsafe_allow_html=True)
 
+    st.sidebar.markdown(f"## {config.STAFF}")
 
     tab = TABS[tab_name]
 

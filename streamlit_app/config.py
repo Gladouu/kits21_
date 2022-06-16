@@ -10,8 +10,6 @@ from member import Member
 TITLE = "Kidneyppyng App"
 
 
-
-
 TEAM_MEMBERS = [
     Member(
         name="Gladis Valenzuela",
@@ -24,9 +22,11 @@ TEAM_MEMBERS = [
         github_url="https://github.com/charlessutton",
     ),
     Member("Damien Vannetzel",
-        linkedin_url="https://www.linkedin.com/in/damien-vann",
-        github_url="https://github.com/charlessutton",
-    ),
+           linkedin_url="https://www.linkedin.com/in/damien-vann",
+           github_url="https://github.com/charlessutton",
+           ),
 ]
 
 PROMOTION = "Promotion Continue Data Scientist - September 2021"
+
+STAFF = 'Thomas BOEHLER, Raphaël KASSEL'
