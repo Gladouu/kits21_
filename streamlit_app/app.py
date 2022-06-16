@@ -54,8 +54,8 @@ def run():
     for member in config.TEAM_MEMBERS:
         st.sidebar.markdown(member.sidebar_markdown(), unsafe_allow_html=True)
 
-    st.sidebar.markdown(f"## {config.STAFF}")
-
+    st.sidebar.markdown("### Educational Team:")
+    st.sidebar.markdown(config.STAFF, unsafe_allow_html=True)
     tab = TABS[tab_name]
 
     tab.run()

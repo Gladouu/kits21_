@@ -10,7 +10,7 @@ import streamlit as st
 
 title = "Kidney Tumor Segmentation Challenge"
 sidebar_name = "Introduction"
-subtitle = "Contexte"
+subtitle = " 🩻 Contexte"
 
 
 def run():
@@ -18,37 +18,29 @@ def run():
     st.markdown("---")
     st.image("images/z_gif.gif")
 
-    st.markdown("---")
     st.title(subtitle)
-
     st.markdown("---")
-    # st.markdown(
-    #     """
-    #     Contexte :
-    #     """
-    # )
-    # st.markdown("---")
 
     st.markdown(
         """
-	Le cancer du rein est l'une des tumeurs malignes les plus courantes chez les adultes dans le monde. Heureusement, la plupart des tumeurs rénales sont découvertes tôt alors qu'elles sont encore localisées et opérables. 
+        Le cancer du rein, est l'une des tumeurs malignes les plus courantes chez les adultes dans le monde. Près de 70 à 80% des tumeurs du rein sont des tumeurs malignes. Heureusement, la plupart des tumeurs rénales sont découvertes tôt, de façon fortuite, dans 70 à 80% des cas, lorsqu'elles sont encore localisées et opérables. 
 
-    Les tumeurs rénales sont connues pour leur apparence remarquable en imagerie par tomodensitométrie (TDM), ce qui a permis aux radiologues et aux chirurgiens d'effectuer d'importants travaux pour étudier la relation entre la taille, la forme et l'apparence de la tumeur et ses perspectives de traitement. C'est cependant un travail laborieux qui repose sur des évaluations souvent subjectives et imprécises.
+        L’étude de la relation entre la taille, la forme et l'apparence de la tumeur et ses perspectives de traitement représente un travail laborieux reposant sur des appréciations souvent subjectives et imprécises. 
 
-    La segmentation automatique des tumeurs rénales et de l'anatomie environnante pourrait-être un outil prometteur pour remédier à ces limitations. 
+        En effet, le diagnostic reposant sur de l’analyse d’image est soumis à une grande variabilité. Il existe une variabilité interpersonnelle (deux personnes peuvent ne pas avoir le même diagnostic) et intrapersonnelle (une même personne peut ne pas être constante dans sa façon d’établir un diagnostic, prendre des mesures ou bien encore classer des éléments). 
+
+        La segmentation automatique des tumeurs rénales pourrait donc être un des outils pour remédier à ces limitations : les évaluations basées sur la segmentation sont objectives et nécessairement bien définies. L'automatisation, réduisant ainsi l’effort, permettrait au radiologue de se concentrer sur des zones de plus fort intérêt clinique.
+
         """
     )
     st.markdown("---")
 
+    st.title("🎯 Objectif")
+    st.markdown("---")
+
     st.markdown(
         """
-        🎯 Objectif :
+    Produire un modèle proposant une segmentation automatique aussi précise que possible des reins, des tumeurs et des kystes.
 	    """
     )
     st.markdown("---")
-
-    st.markdown(
-        """
-    Produire un modèle proposant une segmentation aussi précise que possible des reins, des tumeurs et des kystes.
-	    """
-    )
